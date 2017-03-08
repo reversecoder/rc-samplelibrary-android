@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+repositories {
+    maven { url "https://raw.github.com/synergian/wagon-git/releases" }
+}
+
+configurations {
+    deployLibrary
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+uploadArchives {
+
+    repositories.mavenDeployer {
+        configuration = configurations.deployLibrary
+        repository(url: 'git:releases://git@github.com:reversecoder/rc-githubmavenrepoandroid.git')
+        snapshotRepository(url: 'git:snapshots://git@github.com:reversecoder/rc-githubmavenrepoandroid.git')
+
+        uniqueVersion = true
+
+        pom.project {
+            groupId = 'com.reversecoder.githubmavenrepo.android'
+            version = '1.0.0-SNAPSHOT'
+            artifactId = 'androidview'
+            packaging 'aar'
+        }
+    }
+}
+
+dependencies {
+    deployLibrary "ar.com.synergian:wagon-git:0.3.0"
+}
