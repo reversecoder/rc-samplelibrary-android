@@ -38,15 +38,13 @@ uploadArchives {
 
 ## Deploy and upload archive:
 
-1) Deploying command from project directory:
-   ----------------------------------------
+###Deploying command from project directory:
 
 ./gradlew clean build uploadArchives
 
-2) Update gradlew permission:
-   -------------------------
+### Update gradlew permission:
 
-i) If "./gradlew: Permission denied" error is found, then run-
+#### If "./gradlew: Permission denied" error is found, then run-
 
 Either
 
@@ -56,6 +54,6 @@ OR
 
 git update-index --chmod=(+|-)x <file>
 
-ii) Again run deploying command-
+#### Again run deploying command-
 
 ./gradlew clean build uploadArchives
