@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.reversecoder.samplelibrary.androidstudio</groupId>
+  <artifactId>rc-samplelibrary-androidstudio</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20170309.093809</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20170309093809</lastUpdated>
+  </versioning>
+</metadata>
