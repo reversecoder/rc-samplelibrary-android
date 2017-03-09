@@ -1,12 +1,4 @@
 apply plugin: 'com.android.application'
-repositories {
-    maven {
-        url "https://raw.github.com/reversecoder/rc-samplelibrary-androidstudio/releases"
-    }
-    maven {
-        url "https://raw.github.com/reversecoder/rc-samplelibrary-androidstudio/snapshots"
-    }
-}
 
 android {
     compileSdkVersion 23
@@ -33,5 +25,4 @@ android {
 dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(":rc_samplelibrary_androidstudio")
-//    compile 'com.reversecoder.samplelibrary.androidstudio:rc-samplelibrary-androidstudio:1.0.0-SNAPSHOT'
 }
