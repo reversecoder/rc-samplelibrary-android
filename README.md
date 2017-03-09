@@ -2,8 +2,7 @@
 
 ## Integrate wagon-git:
 
-In library "build.gradle" file:
-------------------------------
+###In library "build.gradle" file:
 
 apply plugin: 'maven'
 
