@@ -31,15 +31,15 @@ uploadArchives {
 
     repositories.mavenDeployer {
         configuration = configurations.deployLibrary
-        repository(url: 'git:releases://git@github.com:reversecoder/rc-githubmavenrepoandroid.git')
-        snapshotRepository(url: 'git:snapshots://git@github.com:reversecoder/rc-githubmavenrepoandroid.git')
+        repository(url: 'git:releases://git@github.com:reversecoder/rc-samplelibrary-androidstudio.git')
+        snapshotRepository(url: 'git:snapshots://git@github.com:reversecoder/rc-samplelibrary-androidstudio.git')
 
         uniqueVersion = true
 
         pom.project {
-            groupId = 'com.reversecoder.githubmavenrepo.android'
+            groupId = 'com.reversecoder.samplelibrary.androidstudio'
             version = '1.0.0-SNAPSHOT'
-            artifactId = 'androidview'
+            artifactId = 'rc-samplelibrary-androidstudio'
             packaging 'aar'
         }
     }

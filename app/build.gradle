@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 repositories {
     maven {
-        url "https://raw.github.com/reversecoder/rc-githubmavenrepoandroid/releases"
+        url "https://raw.github.com/reversecoder/rc-samplelibrary-androidstudio/releases"
     }
     maven {
-        url "https://raw.github.com/reversecoder/rc-githubmavenrepoandroid/snapshots"
+        url "https://raw.github.com/reversecoder/rc-samplelibrary-androidstudio/snapshots"
     }
 }
 
@@ -13,7 +13,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.reversecoder.githubmavenrepo"
+        applicationId "com.reversecoder.samplelibrary.androidstudio.demo"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -32,5 +32,6 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
-//    compile 'com.reversecoder.githubmavenrepo.android:androidview:1.0.0-SNAPSHOT'
+    compile project(":rc_samplelibrary_androidstudio")
+//    compile 'com.reversecoder.samplelibrary.androidstudio:rc-samplelibrary-androidstudio:1.0.0-SNAPSHOT'
 }

@@ -1,4 +1,4 @@
-package com.reversecoder.githubmavenrepo.android;
+package com.reversecoder.samplelibrary.androidstudio;
 
 import android.content.Context;
 import android.util.Log;
@@ -16,6 +16,6 @@ public class AndroidView {
     }
 
     public void showAndroidView(){
-        Toast.makeText(mContext,"I am from Android view.",Toast.LENGTH_SHORT).show();
+        Toast.makeText(mContext,"I am from:\nrc-samplelibrary-androidstudio",Toast.LENGTH_LONG).show();
     }
 }
