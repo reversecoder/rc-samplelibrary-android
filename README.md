@@ -3,7 +3,7 @@
 ## Integrate wagon-git:
 
 In library "build.gradle" file:
-==============================
+------------------------------
 
 apply plugin: 'maven'
 
@@ -40,12 +40,12 @@ uploadArchives {
 ## Deploy and upload archive:
 
 1) Deploying command from project directory:
-   =========================================
+   ----------------------------------------
 
 ./gradlew clean build uploadArchives
 
 2) Update gradlew permission:
-   =========================
+   -------------------------
 
 i) If "./gradlew: Permission denied" error is found, then run-
 
